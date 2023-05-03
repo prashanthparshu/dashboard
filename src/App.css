@@ -1,0 +1,79 @@
+.Navbar_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin: 0px;
+}
+
+.Navbar_Icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Navbar_img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-left: 50px;
+}
+
+.Navbar_search {
+  width: 400px;
+  padding: 9px;
+  border: none;
+  font-weight: bold;
+}
+
+.Month_tran_main {
+  width: 100%;
+  border: 1px solid black;
+  height: 100px;
+  box-shadow: 2px 2px gray;
+}
+
+.Month_tran_span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 12px;
+}
+
+.Month_tran_span_green {
+  color: green;
+}
+
+.Month_tran_span_red {
+  color: red;
+}
+
+.Month_tran_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.ActivePlans_Bar_main {
+  margin: 30px 25px;
+}
+.ActivePlans_Bar {
+  border-radius: 20px;
+}
+
+.Subscribers_main {
+  box-shadow: 2px 2px gray;
+  width: 80%;
+}
+
+.Notification_a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.Notification_content {
+  margin: 10px 5px;
+  font-size: 15px;
+}
