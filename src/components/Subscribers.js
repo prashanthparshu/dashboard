@@ -18,7 +18,7 @@ const Subscribers = () => {
           style={{
             display: "flex",
             justifyContent: "space-between",
-            padding: "10px 20px",
+            padding: "10px 10px",
             alignItems: "center",
           }}
         >
@@ -35,7 +35,7 @@ const Subscribers = () => {
           </a>
         </div>
         <TableContainer component={"Paper"}>
-          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+          <Table sx={{ minWidth: { md: 650 } }} aria-label="simple table">
             <TableHead>
               <TableRow>
                 <TableCell>Name</TableCell>
@@ -55,11 +55,11 @@ const Subscribers = () => {
                   <TableCell component="th" scope="row">
                     {row.Name}
                   </TableCell>
-                  <TableCell align="right">{row.UserId}</TableCell>
-                  <TableCell align="right">{row.Comunity}</TableCell>
-                  <TableCell align="right">{row.PlanName}</TableCell>
-                  <TableCell align="right">{row.PlanStatus}</TableCell>
-                  <TableCell align="right">{row.JoinedOn}</TableCell>
+                  <TableCell align="center">{row.UserId}</TableCell>
+                  <TableCell align="center">{row.Comunity}</TableCell>
+                  <TableCell align="center">{row.PlanName}</TableCell>
+                  <TableCell align="center">{row.PlanStatus}</TableCell>
+                  <TableCell align="center">{row.JoinedOn}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

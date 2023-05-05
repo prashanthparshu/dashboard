@@ -12,22 +12,27 @@ const MainSinglePage = () => {
     <>
       <Grid container>
         {/* Left Side  */}
-        <Grid item xs={9}>
+        <Grid item md={12} lg={9} sx={{ boxShadow: "2px 1px #888888" }}>
           <LiveTransaction />
           <Transaction />
         </Grid>
         {/* Right Side  */}
-        <Grid item xs={3} sx={{ boxShadow: "2px 1px #888888" }}>
+        <Grid
+          item
+          md={12}
+          lg={3}
+          sx={{ boxShadow: "2px 1px #888888", width: "100vw" }}
+        >
           <Notification />
         </Grid>
       </Grid>
       <Grid container>
         {/* Left Side  */}
-        <Grid item xs={9} sx={{ boxShadow: "2px 1px #888888" }}>
+        <Grid item lg={9} sx={{ boxShadow: "2px 1px #888888", width: "100vw" }}>
           <Subscribers />
         </Grid>
         {/* Right Side  */}
-        <Grid item xs={3} sx={{ boxShadow: "2px 1px #888888" }}>
+        <Grid item lg={3} sx={{ boxShadow: "2px 1px #888888", width: "100vw" }}>
           <Chart />
         </Grid>
       </Grid>

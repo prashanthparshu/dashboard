@@ -24,8 +24,8 @@ const Search = styled("div")(({ theme }) => ({
   },
   marginRight: theme.spacing(2),
   marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
+  width: "140%",
+  [theme.breakpoints.down("sm")]: {
     marginLeft: theme.spacing(3),
     width: "auto",
   },
@@ -49,16 +49,25 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     transition: theme.transitions.create("width"),
     width: "100%",
     [theme.breakpoints.up("md")]: {
-      width: "20ch",
+      width: "100ch",
     },
   },
 }));
 
 export default function ButtonAppBar() {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#fff", color: "black" }}>
+    <AppBar
+      position="sticky"
+      sx={{
+        backgroundColor: "#fff",
+        color: "black",
+      }}
+    >
       <Toolbar>
-        <FormControl variant="standard" sx={{ m: 1, minWidth: 80 }}>
+        <FormControl
+          variant="standard"
+          sx={{ m: 1, minWidth: { lg: 100, md: 100 } }}
+        >
           <InputLabel id="demo-simple-select-standard-label">Select</InputLabel>
           <Select
             labelId="demo-simple-select-standard-label"
@@ -87,7 +96,6 @@ export default function ButtonAppBar() {
         </Search>
         <Stack
           sx={{
-            marginLeft: "700px",
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",

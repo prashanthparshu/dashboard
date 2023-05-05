@@ -5,7 +5,12 @@ import { Grid } from "@mui/material";
 const LiveTransaction = () => {
   return (
     <Grid container sx={{ boxShadow: "1px 1px #888888", marginTop: "10px" }}>
-      <Grid item xs={4} sx={{ padding: "5px 50px" }}>
+      <Grid
+        item
+        lg={4}
+        xs={4}
+        sx={{ padding: { lg: "5px 50px", sm: "2px 10px" } }}
+      >
         <div>
           <h4>
             <span className="Month_tran_span_green">24%</span>than last month
@@ -21,7 +26,12 @@ const LiveTransaction = () => {
           </div>
         </div>
       </Grid>
-      <Grid item xs={4} sx={{ padding: "5px 50px" }}>
+      <Grid
+        item
+        lg={4}
+        xs={4}
+        sx={{ padding: { lg: "5px 50px", sm: "2px 10px" } }}
+      >
         <div>
           <h4>
             <span className="Month_tran_span_red">13%</span>than last month
@@ -37,7 +47,12 @@ const LiveTransaction = () => {
           </div>
         </div>
       </Grid>
-      <Grid item xs={4} sx={{ padding: "5px 50px" }}>
+      <Grid
+        item
+        lg={4}
+        xs={4}
+        sx={{ padding: { lg: "5px 50px", sm: "2px 10px" } }}
+      >
         <div>
           <h4>
             <span className="Month_tran_span_green">17%</span>than last month
